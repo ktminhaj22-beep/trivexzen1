@@ -5,19 +5,5 @@
     "price": 499,
     "description": "100% Cotton, comfortable fit for all seasons.",
     "image": "https://via.placeholder.com/300x200?text=T-Shirt+Image"
-  },
-  {
-    "id": 2,
-    "name": "Denim Jeans",
-    "price": 1499,
-    "description": "Premium quality slim fit blue denim jeans.",
-    "image": "https://via.placeholder.com/300x200?text=Jeans+Image"
-  },
-  {
-    "id": 3,
-    "name": "Casual Shoes",
-    "price": 999,
-    "description": "Lightweight and perfect for daily wear.",
-    "image": "https://via.placeholder.com/300x200?text=Shoes+Image"
-  },
+  }
 ]

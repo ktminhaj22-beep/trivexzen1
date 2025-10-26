@@ -1,128 +1,23 @@
-/*
- * General Styles and Body Setup
- */
-body {
-    /* Font used across the site */
-    font-family: Arial, sans-serif;
-    /* Remove default margins */
-    margin: 0;
-    padding: 0;
-    /* Light grey background for the page */
-    background-color: #f4f4f4;
-    /* Dark grey text color */
-    color: #333;
-}
-
-/*
- * Header (Navigation/Title Bar)
- */
-header {
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
-    padding: 15px 0;
-    text-align: center; /* Center the title */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
-}
-
-header h1 {
-    margin: 0;
-}
-
-/*
- * Container for main content
- */
-.container {
-    width: 90%; /* Use 90% of screen width */
-    max-width: 1200px; /* Maximum width limit */
-    margin: auto; /* Center the container */
-    overflow: hidden;
-    padding: 20px 0;
-}
-
-/*
- * Product Display Grid
- */
-.product-grid {
-    display: flex; /* Use Flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 30px; /* Space between product cards */
-    justify-content: center; /* Center the product cards */
-}
-
-/*
- * Individual Product Card Style
- */
-.product-card {
-    background: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px; /* Slightly rounded corners */
-    width: 300px; /* Fixed width for the card */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* More visible shadow */
-    text-align: center;
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.product-card:hover {
-    transform: translateY(-5px); /* Lift the card slightly on hover */
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-.product-card h3 {
-    margin: 10px 0;
-    color: #007BFF; /* A nice blue color for product title */
-}
-
-.product-card p {
-    font-size: 0.9em;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-/*
- * Price Tag Style
- */
-.price {
-    color: #e8491d; /* Distinct accent color (Orange-Red) */
-    font-size: 1.4em;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/*
- * Buy Now Button Style
- */
-.buy-button {
-    background-color: #e8491d;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    cursor: pointer;
-    border-radius: 50px; /* Pill-shaped button */
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.buy-button:hover {
-    background-color: #d8390d; /* Slightly darker on hover */
-}
-
-/*
- * Footer Style
- */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
-    border-top: 1px solid #ccc;
-    background-color: #ddd;
-    color: #333;
-    font-size: 0.8em;
-}
+[
+  {
+    "id": 1,
+    "name": "Stylish T-Shirt",
+    "price": 499,
+    "description": "100% Cotton, comfortable fit for all seasons.",
+    "image": "https://via.placeholder.com/300x200?text=T-Shirt+Image"
+  },
+  {
+    "id": 2,
+    "name": "Denim Jeans",
+    "price": 1499,
+    "description": "Premium quality slim fit blue denim jeans.",
+    "image": "https://via.placeholder.com/300x200?text=Jeans+Image"
+  },
+  {
+    "id": 3,
+    "name": "Casual Shoes",
+    "price": 999,
+    "description": "Lightweight and perfect for daily wear.",
+    "image": "https://via.placeholder.com/300x200?text=Shoes+Image"
+  }
+]

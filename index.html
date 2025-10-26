@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trivezen store - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛍 trivexzen Store</h1>
+    </header>
+
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="product-list">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Awesome Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fetch data from the products.json file
+        fetch('products.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(products => {
+                const productList = document.getElementById('product-list');
+                
+                products.forEach(product => {
+                    // Create a card for each product
+                    const card = document.createElement('div');
+                    card.className = 'product-card';
+                    // Add product information to the card
+                    card.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <div class="price">₹${product.price}</div>
+                        <button class="buy-button" onclick="alert('Attempting to add ${product.name} to cart. Cart feature coming soon!')">Buy Now</button>
+                    `;
+                    productList.appendChild(card);
+                });
+            })
+            .catch(error => {
+                // Display error message if something goes wrong
+                console.error('Error loading products:', error);
+                const productList = document.getElementById('product-list');
+                productList.innerHTML = '<p style="color: red;">Sorry, an error occurred while loading products. Please check the "products.json" file.</p>';
+            });
+    </script>
+
+</body>
+</html>
